@@ -17,6 +17,9 @@ max_num = neg_list[0]
 for i in neg_list[1:]:
     if i > max_num:
         max_num = i
+for i, item in enumerate(list_1):
+    if item == max_num:
+        idx_num = i
 
-print(f'Максимальное отрицательное {max_num}')
-print(sorted(list_1))  # отсортировал чтобы показать где самое максимальное отрицательное
+print(f'Максимальное отрицательное {max_num}, на позиции {idx_num}')
+
